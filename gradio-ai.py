@@ -3,7 +3,7 @@ import requests
 import os
 
 # ===================== 你的配置 =====================
-API_KEY = os.environ.get('APPLE_DEEPSEEK_API_KEY')
+API_KEY = os.environ.get('DEEPSEEK_API_KEY')
 
 
 # ====================================================
@@ -51,4 +51,4 @@ demo = gr.ChatInterface(
 )
 
 if __name__ == "__main__":
-    demo.launch(server_name="0.0.0.0", server_port=7860)
+    demo.launch(server_name="127.0.0.1", server_port=7860)

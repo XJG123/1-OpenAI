@@ -2,7 +2,7 @@
 <module type="PYTHON_MODULE" version="4">
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$" />
-    <orderEntry type="jdk" jdkName="Python 3.13 (1-OpenAI) (2)" jdkType="Python SDK" />
+    <orderEntry type="jdk" jdkName="Python 3.14 virtualenv at G:\000AIWorkeSpace\AgentWorkSpace\AgentPYProject\1-OpenAI\.venv-agent" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
 </module>
