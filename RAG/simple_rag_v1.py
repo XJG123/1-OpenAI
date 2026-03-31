@@ -16,8 +16,8 @@ def retrieval(query):
     path_list=list(Path("my_knowledge").glob("*.txt"))
     print(path_list)
     # 1.找到和问题相关的文件
-    for path in path_list:
-        if path.stem in query:
+    for path in path_list:          #A.复杂度？
+        if path.stem in query:      #B.检索机制？   C.【向量？】   D.资料长度？
             context += path.read_text(encoding="utf-8")
             context += "\n\n"
 
@@ -61,7 +61,7 @@ def generation(prompt):
 
 
 if __name__ == '__main__':
-    query="分析探索者x100无人机有哪些类型"
+    query="简要介绍一下探索者x100"
     # print("==不使用RAG===")
     # print(generation(query))
 

@@ -1,0 +1,54 @@
+【向量嵌入--Vector Emedding】
+计算机只能理解数字，为了让计算机'理解'文字，我们需要一种方式把文字转换成它能处理的数字形式，比如：图书馆中的编号R726XXXXXX
+向量嵌入：一种将各种类型(文本图像音频视频)的数据转换成低维的、稠密的实数向量的过程，使其在向量空间中的位置能够反映其语义信息、上下文关系和特征，以便计算机能够理解和处理
+---对各种类型的数据进行向量化
+
+`在空间中举例可以反映内容的关联性
+`不仅单词，图片也可以进行向量嵌入
+`嵌入后计算机可以更好的进行理解
+
+文章：
+Word2Vec(2013) 单词向量化
+《Efficient Estimation of Word Representations in Vector Space》
+
+Sentence-BERT(2019)句向量
+《Sentence-BERT：Sentence Embeddings using Siamese BERT-Networks》
+
+工具：
+Sentence Transformers：
+专门用于生成句子和文本嵌入的Python框架
+常用模型：
+·all-MiniLM-L6-v2（英文，轻量高效）
+·jina-embeddings-v3（多语言）
+·bge-large-zh-v1.5(中文效果好)
+
+
+向量数据库 Vector Database
+在专业的数据库中，除了进行内容存储，还会提供各种巧妙的数据结构和索引策略，加速查找过程，是实际项目必不可少的一部分
+
+近似最近邻搜索（ANN）
+
+主流向量数据库：
+FAISS
+ChromaDB<------学习首选，开源、API友好，易于上手，支持本地化
+Milvus/Zilliz
+Pinecone
+
+modelscope:预训练模型下载加速
+sentence-transformers：基于huggingface模型进行句嵌入
+chromadb：本地轻量级数据库
+
+当前v2方案不足：
+1、只支持txt
+2、对整个文件内容进行Embedding，印象效率和结果
+3、代码风格稚嫩，不符合企业级要求
+4、未对RAG结果进行量化评估，失去优化依据
+
+持续优化：
+借助LangChain框架中更成熟工具，加载不同文件类型、切分文件内容构建更好的知识库。
+用模块化思想、更简洁的代码方式，完成符合行业主流的RAG项目
+
+
+
+
+
