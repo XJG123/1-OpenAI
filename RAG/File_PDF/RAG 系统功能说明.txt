@@ -1,4 +1,4 @@
-RAG系统支持读取的文件格式包括TXT、PDF、PNG、JPG、DOCX。
+﻿RAG系统支持读取的文件格式包括TXT、PDF、PNG、JPG、DOCX。
 其中PNG和JPG属于图片格式，需要通过OCR技术提取文字后才能进行检索。
 PDF文件分为可复制文本型和扫描图片型，扫描型PDF同样需要OCR识别。
 
